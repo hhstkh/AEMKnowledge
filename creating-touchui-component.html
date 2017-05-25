@@ -30,6 +30,15 @@ granite/ui/components/foundation/section	Defines a section within a tab.
 granite/ui/components/foundation/layouts/fixedcolumns	Defines fixed columns. 
 granite/ui/components/foundation/form/textfield	Defines a text field that lets authors enter data.
 granite/ui/components/foundation/form/textarea	Defines a text area field that lets author more data than a text field. 
+<options
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/foundation/form/multifield"
+    fieldLabel="Options">
+    <field
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textfield"
+        name="./options" />
+</options>
 Note:
 When building a dialog for the Touch UI view, you define the type of control (for example, a text field) by setting the sling:resourceType property. In contrast, when building a dialog for the classic view, you define the type of control by setting its xtype property. You set both properties in the following sections. For a listing of all Granite objects, see Granite Reference.
 
